@@ -32,4 +32,9 @@ public class Game {
     public void setGameNumber(int[] gameNumber) {
         this.gameNumber = gameNumber;
     }
+
+    public void initGame(){
+        this.ballCount=0;
+        this.strikeCount=0;
+    }
 }

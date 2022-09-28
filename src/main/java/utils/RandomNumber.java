@@ -35,6 +35,7 @@ public class RandomNumber {
         return findNumber;
     }
     private boolean checkUnique(int index,int[] randomNumber, int findNumber){
+
         for(int i =0;i<index;i++){
             if (randomNumber[i] == findNumber){
                 return false;
