@@ -10,6 +10,7 @@ public class SplitNumber {
     }
 
     public int[] getSplitNumbers() throws IllegalArgumentException {
+
         if(number.length() != size){
             throw new IllegalArgumentException();
         }

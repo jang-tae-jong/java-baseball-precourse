@@ -16,9 +16,9 @@ public class RandomNumber {
     }
 
     public int[] getRandomNumber() {
-        randomNumber = new int[this.size];
+        randomNumber = new int[size];
         for(int i =0; i< size; i++){
-            randomNumber[i] = getNumber(randomNumber,i,this.startNumber,this.endNumber);
+            randomNumber[i] = getNumber(randomNumber,i,startNumber,endNumber);
         }
         return randomNumber;
     }

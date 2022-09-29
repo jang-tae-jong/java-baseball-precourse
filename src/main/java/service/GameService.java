@@ -3,7 +3,7 @@ package service;
 import camp.nextstep.edu.missionutils.Console;
 import domain.Game;
 import domain.Player;
-import utils.GameMessage;
+import view.GameMessage;
 import utils.RandomNumber;
 import utils.SplitNumber;
 

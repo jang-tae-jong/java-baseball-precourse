@@ -2,7 +2,7 @@ package controller;
 
 import camp.nextstep.edu.missionutils.Console;
 import service.GameService;
-import utils.SystemMessage;
+import view.SystemMessage;
 
 public class GameController {
     private int size;
@@ -28,11 +28,14 @@ public class GameController {
         endgame();
     }
 
-    private void endgame(){
+    private void endgame() throws IllegalArgumentException{
         systemMessage.getEndMessage();
         String input = Console.readLine();
         if(rePlay.equals(input)){
             run();
+        }
+        if(!rePlay.equals(input) && !endPlay.equals(input)){
+            throw new IllegalArgumentException();
         }
     }
 
